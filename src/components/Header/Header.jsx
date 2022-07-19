@@ -5,6 +5,7 @@ import Logo from './Logo';
 import Search from './Search';
 import Auth from './Auth';
 import Heading from './Heading';
+import PropTypes from 'prop-types';
 
 const Header = () => {
   return (
@@ -19,6 +20,10 @@ const Header = () => {
       </Layout>
     </header>
   );
+};
+
+Header.propTypes = {
+  auth: PropTypes.bool,
 };
 
 export default Header;

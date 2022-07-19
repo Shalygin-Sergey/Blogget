@@ -1,12 +1,16 @@
 import style from './Main.module.css';
-import Layout from '..Layout/';
+import Layout from '../Layout/';
+import Tabs from './Tabs/';
+import List from './List/';
 
 export const Main = () => {
+  console.log(style);
   return (
-    <Layout>
-      <div>
-        <p></p>
-      </div>
-    </Layout>
+    <main>
+      <Layout>
+        <Tabs />
+        <List />
+      </Layout>
+    </main>
   );
 };
