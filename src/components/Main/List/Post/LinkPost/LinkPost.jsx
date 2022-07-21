@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 
 
 export const LinkPost = (props) => {
-  console.log(style);
   console.log(props);
   return (
     <>

@@ -1,22 +1,25 @@
 import style from './Tabs.module.css';
+import PropTypes from 'prop-types';
 
+export const Tabs = ({list, setList}) => {
+  const handleClick = (id) => {
+    setList(list.filter(item => item.id !== id));
+  };
 
-export const Tabs = () => {
-  console.log(style);
   return (
     <ul className={style.list}>
-      <li>
-        <a href="/">Главная</a>
-      </li>
-      <li>
-        <a href="/">Просмотренные</a>
-      </li>
-      <li>
-        <a href="/">Сохраненные</a>
-      </li>
-      <li>
-        <a href="/">Мои посты</a>
-      </li>
+      { // нужно забрать из объекта данные для подстановки ID_1
+        list.map(({value, id}) => (
+          <li key={id}>
+            <button onClick={() => handleClick(id)}>{value}</button>
+          </li>
+        ))
+      }
     </ul>
   );
+};
+
+Tabs.propTypes = {
+  list: PropTypes.array,
+  setList: PropTypes.func,
 };
