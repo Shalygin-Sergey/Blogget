@@ -4,9 +4,6 @@
   -webkit-box-orient: vertical;
   display: -webkit-box;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 130%;
-  color: #2d2d2d;
   margin-bottom: 10px;
   transition: color 0.36s ease-in-out;
 }
@@ -20,15 +17,11 @@
 }
 
 @media (min-width: 768px) {
-  .linkPost {
-    font-size: 32px;
-  }
+  
 }
 
 @media (min-width: 580px) {
-  .linkPost {
-    font-size: 26px;
-  }
+  
   .linkPost:hover {
     color: #cc6633;
   }
@@ -38,6 +31,17 @@
   }
 }
 
+.linkAuthor {
+  position: relative;
+  transition: color 0.36s ease-in-out;
+  overflow: hidden;
+  width: min-content;
+}
 
+.linkAuthor:hover {
+  color: #2d2d2d;
+}
 
-
+@media (min-width: 580px) {
+  
+}

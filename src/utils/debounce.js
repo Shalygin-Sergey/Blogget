@@ -1,3 +1,4 @@
+// функуция пересчета длинны
 export const debounceRaf = (fn) => {
   let raf = 0;
 

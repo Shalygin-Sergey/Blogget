@@ -1,10 +1,10 @@
 import style from './Logo.module.css';
-import logo from './img/logo.svg';
+import {ReactComponent as LogoImg} from './img/logo.svg';
 
 export const Logo = () => {
   return (
     <a className={style.link} href="/">
-      <img className={style.logo} src={logo} alt="logo" />
+      <LogoImg className={style.logo} alt="logo" />
     </a>
   );
 };
