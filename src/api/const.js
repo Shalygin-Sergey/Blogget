@@ -5,4 +5,4 @@ export const RANDOM_STRING = 'random_string';
 export const REDIRECT_URI = 'http://localhost:3000/auth';
 export const SCOPE = 'identity submit read';
 
-export const URL = 'https://oauth.reddit.com';
+export const URL_API = 'https://oauth.reddit.com';
