@@ -4,3 +4,4 @@
 - 3 урок class component, setState
 - 4 урок func component, hooks
 - 5 урок list, key, Text-helper
+- 6 урок авторизация
