@@ -9,7 +9,17 @@ export const useToken = (state) => {
 
       setToken(token);
     }
+
+    if (localStorage.getItem('barer')) {
+      setToken(localStorage.getItem('barer'));
+    }
   }, []);
+
+  useEffect(() => {
+    if (token) {
+      localStorage.setItem('barer', token);
+    }
+  }, [token]);
 
   return [token];
 };
